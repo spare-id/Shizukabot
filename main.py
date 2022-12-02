@@ -33,7 +33,7 @@ async def start_handler(_, event: Message):
                                         InlineKeyboardButton('🤖 Updates 🤖', url='https://t.me/movies_halt_update')
                                         ],[
 					InlineKeyboardButton("🎭 Help 🎭", callback_data="Help_msg"),
-					InlineKeyboardButton("🧩 About 🧩", callback_data="About_msg")
+					InlineKeyboardButton("🧩 About 🧩", callback_data="ABOUT_BOT_TEXT")
 	                            ]
 ]))
 
