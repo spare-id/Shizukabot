@@ -11,7 +11,7 @@ async def ForceSub(bot: Client, cmd: Message):
         if user.status == "kicked":
             await bot.send_message(
                 chat_id=cmd.from_user.id,
-                text="You Are Ban To Use Me. Contact My [GreyMatter's Bot](https://www.telegram.dog/greymatter_bots).",
+                text="You Are Ban To Use Me. Contact My [Owner](https://www.telegram.dog/movies_halt_owner_bot).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -27,12 +27,12 @@ async def ForceSub(bot: Client, cmd: Message):
             return 200
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Join Our Update Channel To Use This Bot❗**\n\n"
+            text="**Join Our Channel To Use This Bot❗**\n\n"
                  "Due To Overload, Only Channel Subscribers Can Use This Bot❗",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🍿 Join Update Channel 🍿", url=invite_link.invite_link)
+                        InlineKeyboardButton("🍿 Join Channel 🍿", url=invite_link.invite_link)
                     ],
                     [
                         InlineKeyboardButton("🔄 Refresh 🔄", callback_data="refreshForceSub")
@@ -45,7 +45,7 @@ async def ForceSub(bot: Client, cmd: Message):
     except Exception:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="Somthing Went Wrong. Contact My [GreyMatter's Support Group](https://www.telegram.dog/GreyMatters_Bots_Discussion).",
+            text="Somthing Went Wrong. Contact My [Owner](https://www.telegram.dog/movies_halt_owner_bot).",
             parse_mode="markdown",
             disable_web_page_preview=True
         )
