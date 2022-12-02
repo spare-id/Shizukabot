@@ -26,9 +26,9 @@ async def start_handler(_, event: Message):
 	await event.reply_photo("https://telegra.ph/file/19eeb26fa2ce58765917a.jpg",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
-					[InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')],
-					[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")],
-					[InlineKeyboardButton("Donation", callback_data="Help_msg"),
+					[InlineKeyboardButton('Our Channel', url='https://www.telegram.dog/movies_halt')],
+					[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/movies_halt_update")],
+					[InlineKeyboardButton("Support", callback_data="Help_msg"),
                                         InlineKeyboardButton("About", callback_data="About_msg")]
 				]))
 
@@ -37,8 +37,8 @@ async def help_handler(_, event: Message):
 
     await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
-		[InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')
-	 ],[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots"), 
+		[InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/movies_halt_owner_bot')
+	 ],[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/movies_halt_update"), 
              InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝", callback_data="About_msg")]
         ])
     )
@@ -76,10 +76,10 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')
+						InlineKeyboardButton('Support', url='https://www.telegram.dog/movies_halt_owner_bot')
 					],
 					[
-						InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")
+						InlineKeyboardButton("Updates Channel", url="https://t.me/movies_halt_update")
 					],
 					[
 						InlineKeyboardButton("Home", callback_data="gohome")
@@ -95,10 +95,10 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-					InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')
+					InlineKeyboardButton('Support', url='https://www.telegram.dog/movies_halt_owner_bot')
 					],
 					[
-					InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")
+					InlineKeyboardButton("Updates Channel ", url="https://t.me/movies_halt_update")
 					], 
                                         [
 					InlineKeyboardButton("Home", callback_data="gohome"),
@@ -115,13 +115,13 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
                                         [
-					InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')
+					InlineKeyboardButton('Support', url='https://www.telegram.dog/movies_halt_owner_bot')
 					],
 					[
-					InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")
+					InlineKeyboardButton("Updates Channel", url="https://t.me/movies_halt_update")
 					],
 					[
-					InlineKeyboardButton("Donation", callback_data="Help_msg"),
+					InlineKeyboardButton("Support", callback_data="Help_msg"),
 					InlineKeyboardButton("About", callback_data="About_msg")
 					]
 				]
