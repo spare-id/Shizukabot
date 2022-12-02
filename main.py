@@ -33,7 +33,7 @@ async def start_handler(_, event: Message):
                                         InlineKeyboardButton('🤖 Updates 🤖', url='https://t.me/movies_halt_update')
                                         ],[
 					InlineKeyboardButton("🎭 Help 🎭", callback_data="Help_msg"),
-					InlineKeyboardButton("🧩 About 🧩", callback_data="ABOUT_BOT_TEXT")
+					InlineKeyboardButton("🧩 About 🧩", callback_data="About_msg")
 	                            ]
 ]))
 
@@ -44,7 +44,7 @@ async def help_handler(_, event: Message):
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("Our Channel", url="https://t.me/movies_halt"),
              InlineKeyboardButton("Owner", url="https://t.me/movies_halt_owner_bot"), 
-             InlineKeyboardButton("About", callback_data="ABOUT_BOT_TEXT")]
+             InlineKeyboardButton("About", callback_data="About_msg")]
         ])
     )
 
@@ -99,7 +99,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("About", callback_data="ABOUT_BOT_TEXT"),
+						InlineKeyboardButton("About", callback_data="About_msg"),
 						InlineKeyboardButton("Our Channel", url="https://t.me/movies_halt")
 					], 
                                         [
@@ -123,7 +123,7 @@ async def button(bot, cmd: CallbackQuery):
                                         InlineKeyboardButton('🤖 Updates 🤖', url='https://t.me/movies_halt_update')
                                         ],[
 					InlineKeyboardButton("🎭 Help 🎭", callback_data="Help_msg"),
-					InlineKeyboardButton("🧩 About 🧩", callback_data="ABOUT_BOT_TEXT")
+					InlineKeyboardButton("🧩 About 🧩", callback_data="About_msg")
 					]
 				]
 			),
