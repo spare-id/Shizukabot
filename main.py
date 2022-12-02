@@ -26,8 +26,8 @@ async def start_handler(_, event: Message):
 	await event.reply_photo("https://telegra.ph/file/19eeb26fa2ce58765917a.jpg",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
-					[InlineKeyboardButton('Our Channel', url='https://www.telegram.dog/movies_halt')],
-					[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/movies_halt_update")],
+					[InlineKeyboardButton('Our Channel', url='https://www.t.me/movies_halt')],
+					[InlineKeyboardButton("Updates Channel ", url="https://t.me/movies_halt_update")],
 					[InlineKeyboardButton("Support", callback_data="Help_msg"),
                                         InlineKeyboardButton("About", callback_data="About_msg")]
 				]))
@@ -37,9 +37,9 @@ async def help_handler(_, event: Message):
 
     await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
-		[InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/movies_halt_owner_bot')
-	 ],[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/movies_halt_update"), 
-             InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝", callback_data="About_msg")]
+		[InlineKeyboardButton('Support', url='https://www.t.me/movies_halt_owner_bot')
+	 ],[InlineKeyboardButton("Updates Channel ", url="https://t.me/movies_halt_update"), 
+             InlineKeyboardButton("About", callback_data="About_msg")]
         ])
     )
 
@@ -56,7 +56,7 @@ async def inline_handlers(_, event: Message):
             if "|||" in message.text:
                 f_text = message.text.split("|||", 1)[0]
                 msg_text = message.text.html.split("|||", 1)[0]
-            answers += f'**🍿 Title ➠ ' + '' + f_text.split("\n", 1)[0] + '' + '\n\n📜 About ➠ ' + '' + f_text.split("\n", 2)[-1] + ' \n\n**'
+            answers += f'**🍿 Name ➠ ' + '' + f_text.split("\n", 1)[0] + '' + '\n\n🔗 Link ➠ ' + '' + f_text.split("\n", 2)[-1] + ' \n\n**'
     try:
         msg = await event.reply_text(answers)
         await asyncio.sleep(65)
@@ -76,7 +76,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton('Support', url='https://www.telegram.dog/movies_halt_owner_bot')
+						InlineKeyboardButton('Support', url='https://www.t.me/movies_halt_owner_bot')
 					],
 					[
 						InlineKeyboardButton("Updates Channel", url="https://t.me/movies_halt_update")
@@ -95,14 +95,13 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-					InlineKeyboardButton('Support', url='https://www.telegram.dog/movies_halt_owner_bot')
-					],
-					[
-					InlineKeyboardButton("Updates Channel ", url="https://t.me/movies_halt_update")
-					], 
-                                        [
-					InlineKeyboardButton("Home", callback_data="gohome"),
-					InlineKeyboardButton("About", callback_data="About_msg")
+                                        InlineKeyboardButton('↪️ Add Me To Your Group  ↩️', url=f'http://t.me/ShizukaMinamotobot?startgroup=true')
+                                        ],[
+                                        InlineKeyboardButton('⚡ Subscribe ⚡', url='https://t.me/movies_halt'),
+                                        InlineKeyboardButton('🤖 Updates 🤖', url='https://t.me/movies_halt_update')
+                                        ],[
+					InlineKeyboardButton("🏠 Home 🏠", callback_data="gohome"),
+					InlineKeyboardButton("🧩 About 🧩", callback_data="About_msg")
 					]
 				]
 			),
@@ -115,14 +114,14 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
                                         [
-					InlineKeyboardButton('Support', url='https://www.telegram.dog/movies_halt_owner_bot')
+					InlineKeyboardButton('👀 Support 👀', url='https://www.t.me/movies_halt_owner_bot')
 					],
 					[
-					InlineKeyboardButton("Updates Channel", url="https://t.me/movies_halt_update")
+					InlineKeyboardButton("🍿 Updates Channel 🍿", url="https://t.me/movies_halt_update")
 					],
 					[
-					InlineKeyboardButton("Support", callback_data="Help_msg"),
-					InlineKeyboardButton("About", callback_data="About_msg")
+					InlineKeyboardButton(" 🎭Help 🎭", callback_data="Help_msg"),
+					InlineKeyboardButton("🧩 About 🧩", callback_data="About_msg")
 					]
 				]
 			),
