@@ -5,7 +5,7 @@ class Config(object):
     API_ID = int(os.environ.get("API_ID", 12345))
     API_HASH = os.environ.get("API_HASH", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    BOT_SESSION_NAME = os.environ.get("BOT_SESSION_NAME", "LinkSearchBot")
+    BOT_SESSION_NAME = os.environ.get("BOT_SESSION_NAME", "MovieSearchBot")
     USER_SESSION_STRING = os.environ.get("USER_SESSION_STRING", "")
     CHANNEL_ID = int(os.environ.get("CHANNEL_ID", -100))
     BOT_USERNAME = os.environ.get("BOT_USERNAME")
@@ -16,7 +16,7 @@ class Config(object):
     
     
     
-🤖 My Name: <a href='https://youtube.com/@GreyMattersBot'>Link Search Bot</a>
+🤖 My Name: <a href='http://t.me/ShizukaMinamotobot'>Shizuka Minamoto</a>
 
 📝 Language : <a href='https://www.python.org'> Python V3</a>
 
@@ -24,31 +24,31 @@ class Config(object):
 
 📡 Server: <a href='koyeb.com'>Koyeb</a>
 
-👨‍💻 Created By: <a href='https://t.me/GreyMatter_Bot'>GreyMatter's Bot</a></b>
+👨‍💻 Created By: <a href='https://t.me/aarthur_dayne'>Arthur Dayne</a></b>
 """
 
-    ABOUT_HELP_TEXT = """<b>👨‍💻 Creator : <a href='https://t.me/GreyMatter_Bot'>GreyMatter's Bot</a>
+    ABOUT_HELP_TEXT = """<b>👨‍💻 Creator : <a href='https://t.me/aarthur_dayne'>Arthur Dayne</a>
 If You Want Your Own Bot Like This Then You Can Contact Our Creator.</b>
 """
 
     HOME_TEXT = """
 <b>Hey! {}😅,
 
-I'm Link Search Bot.🤖
+I'm Shizuka Minamoto.🤖
 
 I Can Search 🔍 What You Want❗
 
-<a>Made With ❤ By @GreyMatter_Bots</a></b>
+<a>Made With ❤ By @movies_halt</a></b>
 """
 
 
     START_MSG = """
 <b>Hey! {}😅,
 
-I'm Link Search Bot.🤖
+I'm Shizuka Minamoto.🤖
 
 I Can Search 🔍 What You Want❗
 
-<a>Made With ❤ By @GreyMatter_Bots</a></b>
+<a>Made With ❤ By @movies_halt</a></b>
 """
 
