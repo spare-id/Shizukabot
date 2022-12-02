@@ -42,9 +42,9 @@ async def help_handler(_, event: Message):
 
     await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
-		[InlineKeyboardButton('Support', url='https://www.t.me/movies_halt_owner_bot')
-	 ],[InlineKeyboardButton("Updates Channel ", url="https://t.me/movies_halt_update"), 
-             InlineKeyboardButton("About", callback_data="About_msg")]
+		[InlineKeyboardButton('👀 Owner 👀', url='https://www.t.me/movies_halt_owner_bot')
+	 ],[InlineKeyboardButton("🎃 Main Channel 🎃", url="https://t.me/movies_halt"), 
+             InlineKeyboardButton("🎭 About 🎭", callback_data="About_msg")]
         ])
     )
 
