@@ -26,10 +26,15 @@ async def start_handler(_, event: Message):
 	await event.reply_photo("https://telegra.ph/file/4182df4c717ed16483a07.jpg",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
-					[InlineKeyboardButton('Our Channel', url='https://www.t.me/movies_halt')],
-					[InlineKeyboardButton("Updates Channel ", url="https://t.me/movies_halt_update")],
-					[InlineKeyboardButton("Support", callback_data="Help_msg"),
-                                        InlineKeyboardButton("About", callback_data="About_msg")]
+					[
+                                        InlineKeyboardButton('↪️ Add Me To Your Group  ↩️', url=f'http://t.me/ShizukaMinamotobot?startgroup=true')
+                                        ],[
+                                        InlineKeyboardButton('⚡ Subscribe ⚡', url='https://t.me/movies_halt'),
+                                        InlineKeyboardButton('🤖 Updates 🤖', url='https://t.me/movies_halt_update')
+                                        ],[
+					InlineKeyboardButton("🎭 Help 🎭", callback_data="Help_msg"),
+					InlineKeyboardButton("🧩 About 🧩", callback_data="About_msg")
+					]
 				]))
 
 @Bot.on_message(filters.private & filters.command("help"))
@@ -76,13 +81,13 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton('Support', url='https://www.t.me/movies_halt_owner_bot')
+						InlineKeyboardButton('👀 Owner 👀', url='https://www.t.me/movies_halt_owner_bot')
 					],
 					[
-						InlineKeyboardButton("Updates Channel", url="https://t.me/movies_halt_update")
+						InlineKeyboardButton("🎃 Main Channel 🎃", url="https://t.me/movies_halt")
 					],
 					[
-						InlineKeyboardButton("Home", callback_data="gohome")
+						InlineKeyboardButton("🏠 Home 🏠", callback_data="gohome")
 					]
 				]
 			),
@@ -95,13 +100,10 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-                                        InlineKeyboardButton('↪️ Add Me To Your Group  ↩️', url=f'http://t.me/ShizukaMinamotobot?startgroup=true')
-                                        ],[
-                                        InlineKeyboardButton('⚡ Subscribe ⚡', url='https://t.me/movies_halt'),
-                                        InlineKeyboardButton('🤖 Updates 🤖', url='https://t.me/movies_halt_update')
-                                        ],[
-					InlineKeyboardButton("🏠 Home 🏠", callback_data="gohome"),
-					InlineKeyboardButton("🧩 About 🧩", callback_data="About_msg")
+					InlineKeyboardButton('👀 Owner 👀', url='https://www.t.me/movies_halt_owner_bot')
+					],
+					[
+					InlineKeyboardButton("🍿 Main Channel 🍿", url="https://t.me/movies_halt")
 					]
 				]
 			),
@@ -114,13 +116,12 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
                                         [
-					InlineKeyboardButton('👀 Support 👀', url='https://www.t.me/movies_halt_owner_bot')
-					],
-					[
-					InlineKeyboardButton("🍿 Updates Channel 🍿", url="https://t.me/movies_halt_update")
-					],
-					[
-					InlineKeyboardButton(" 🎭Help 🎭", callback_data="Help_msg"),
+                                        InlineKeyboardButton('↪️ Add Me To Your Group  ↩️', url=f'http://t.me/ShizukaMinamotobot?startgroup=true')
+                                        ],[
+                                        InlineKeyboardButton('⚡ Subscribe ⚡', url='https://t.me/movies_halt'),
+                                        InlineKeyboardButton('🤖 Updates 🤖', url='https://t.me/movies_halt_update')
+                                        ],[
+					InlineKeyboardButton("🎭 Help 🎭", callback_data="Help_msg"),
 					InlineKeyboardButton("🧩 About 🧩", callback_data="About_msg")
 					]
 				]
