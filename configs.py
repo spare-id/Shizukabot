@@ -12,43 +12,26 @@ class Config(object):
     BOT_OWNER = int(os.environ.get("BOT_OWNER"))
     DATABASE_URL = os.environ.get("DATABASE_URL")
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
-    ABOUT_BOT_TEXT = """<b>This is Link Search Bot.
-    
-    
-    
-🤖 My Name: <a href='http://t.me/ShizukaMinamotobot'>Shizuka Minamoto</a>
-
-📝 Language : <a href='https://www.python.org'> Python V3</a>
-
-📚 Library: <a href='https://docs.pyrogram.org'> Pyrogram</a>
-
-📡 Server: <a href='koyeb.com'>Koyeb</a>
-
-👨‍💻 Created By: <a href='https://t.me/aarthur_dayne'>Arthur Dayne</a></b>
-"""
+    ABOUT_BOT_TEXT = """<b>🤖 My Name : <a href=https://t.me/ShizukaMinamotobot><b>Shizuka Minamoto</b></a>\n
+👨‍💻 Developer : <a href=https://t.me/aarthur_dayne><b>Arthur Dayne</b></a>\n
+🧑‍💻 Co-Developer : <a href=https://t.me/astatine_085><b>Astatine 85</b></a>\n
+📝 Language : <a href='https://docs.pyrogram.org/'> Pyrogram</a>\n
+📚 Framework : <a href='https://www.python.org'> Python V3</a>\n
+📡 Hosted on : <a href='https://www.liquidweb.com'> Liquid Web</a>\n
+📢 Updates : <a href=https://t.me/movies_halt_update><b></b>Click Here</a>\n
+🌟 Version : <a href='https://www.google.com'> v 1.0</a>\n</b>"""
 
     ABOUT_HELP_TEXT = """<b>👨‍💻 Creator : <a href='https://t.me/aarthur_dayne'>Arthur Dayne</a>
 If You Want Your Own Bot Like This Then You Can Contact Our Creator.</b>
 """
 
-    HOME_TEXT = """
-<b>Hey! {}😅,
+    HOME_TEXT = '''<b>Hello {} 👋🏻 Im Shizuka. I am here with unlimited auto filters for you 😁.</b>
 
-I'm Shizuka Minamoto.🤖
-
-I Can Search 🔍 What You Want❗
-
-<a>Made With ❤ By @movies_halt</a></b>
-"""
+<i>Add Me To Your Group To See The Magic Or Read More From The Menu Below</i>'''
 
 
-    START_MSG = """
-<b>Hey! {}😅,
+    START_MSG = '''<b>Hello {} 👋🏻 Im Shizuka. I am here with unlimited auto filters for you 😁.</b>
 
-I'm Shizuka Minamoto.🤖
+<i>Add Me To Your Group To See The Magic Or Read More From The Menu Below</i>'''
 
-I Can Search 🔍 What You Want❗
-
-<a>Made With ❤ By @movies_halt</a></b>
-"""
 
