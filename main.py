@@ -26,7 +26,7 @@ async def start_handler(_, event: Message):
 	await event.reply_photo("https://telegra.ph/file/4182df4c717ed16483a07.jpg",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
-					[
+                                    [
                                         InlineKeyboardButton('↪️ Add Me To Your Group  ↩️', url=f'http://t.me/ShizukaMinamotobot?startgroup=true')
                                         ],[
                                         InlineKeyboardButton('⚡ Subscribe ⚡', url='https://t.me/movies_halt'),
@@ -34,17 +34,17 @@ async def start_handler(_, event: Message):
                                         ],[
 					InlineKeyboardButton("🎭 Help 🎭", callback_data="Help_msg"),
 					InlineKeyboardButton("🧩 About 🧩", callback_data="About_msg")
-					]
-				]))
+	                            ]
+]))
 
 @Bot.on_message(filters.private & filters.command("help"))
 async def help_handler(_, event: Message):
 
     await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
-		[InlineKeyboardButton('👀 Owner 👀', url='https://www.t.me/movies_halt_owner_bot')
-	 ],[InlineKeyboardButton("🎃 Main Channel 🎃", url="https://t.me/movies_halt"), 
-             InlineKeyboardButton("🎭 About 🎭", callback_data="About_msg")]
+            [InlineKeyboardButton("Our Channel", url="https://t.me/movies_halt"),
+             InlineKeyboardButton("Owner", url="https://t.me/movies_halt_owner_bot"), 
+             InlineKeyboardButton("About", callback_data="About_msg")]
         ])
     )
 
@@ -81,13 +81,12 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton('👀 Owner 👀', url='https://www.t.me/movies_halt_owner_bot')
+						InlineKeyboardButton("Our Channel", url="https://t.me/movies_halt"),
+						InlineKeyboardButton("Join", url="https://t.me/movies_halt_update")
 					],
 					[
-						InlineKeyboardButton("🎃 Main Channel 🎃", url="https://t.me/movies_halt")
-					],
-					[
-						InlineKeyboardButton("🏠 Home 🏠", callback_data="gohome")
+						InlineKeyboardButton("Creator", url="https://t.me/aarthur_dayne"),
+						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
 			),
@@ -100,10 +99,12 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-					InlineKeyboardButton('👀 Owner 👀', url='https://www.t.me/movies_halt_owner_bot')
-					],
-					[
-					InlineKeyboardButton("🍿 Main Channel 🍿", url="https://t.me/movies_halt")
+						InlineKeyboardButton("About", callback_data="About_msg"),
+						InlineKeyboardButton("Our Channel", url="https://t.me/movies_halt")
+					], 
+                                        [
+						InlineKeyboardButton("Owner", url="https://t.me/aarthur_dayne"),
+						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
 			),
