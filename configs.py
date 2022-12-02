@@ -25,13 +25,13 @@ class Config(object):
 If You Want Your Own Bot Like This Then You Can Contact Our Creator.</b>
 """
 
-    HOME_TEXT = '''<b>Hello {} 👋🏻 Im Shizuka. I am here with unlimited auto filters for you 😁.</b>
+    HOME_TEXT = '''<b>Hello {} 👋🏻 Im Shizuka. I am here to provide unlimited movies to you all . 
 
-<i>Add Me To Your Group To See The Magic Or Read More From The Menu Below</i>'''
+Just Write the name of your desired movie and you will get it within few seconds. You can add me to your Groups too.</b>'''
 
 
-    START_MSG = '''<b>Hello {} 👋🏻 Im Shizuka. I am here with unlimited auto filters for you 😁.</b>
+    START_MSG = '''<b>Hello {} 👋🏻 Im Shizuka. I am here to provide unlimited movies to you all . 
 
-<i>Add Me To Your Group To See The Magic Or Read More From The Menu Below</i>'''
+Just Write the name of your desired movie and you will get it within few seconds. You can add me to your Groups too.</b>'''
 
 
