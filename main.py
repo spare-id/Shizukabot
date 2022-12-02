@@ -85,7 +85,7 @@ async def button(bot, cmd: CallbackQuery):
 						InlineKeyboardButton("Join", url="https://t.me/movies_halt_update")
 					],
 					[
-						InlineKeyboardButton("Creator", url="https://t.me/aarthur_dayne"),
+						InlineKeyboardButton("Creator", url="https://t.me/movies_halt_owner_bot"),
 						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
@@ -103,7 +103,7 @@ async def button(bot, cmd: CallbackQuery):
 						InlineKeyboardButton("Our Channel", url="https://t.me/movies_halt")
 					], 
                                         [
-						InlineKeyboardButton("Owner", url="https://t.me/aarthur_dayne"),
+						InlineKeyboardButton("Owner", url="https://t.me/movies_halt_owner_bot"),
 						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
